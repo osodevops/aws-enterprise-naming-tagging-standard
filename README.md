@@ -179,3 +179,55 @@ a version of TEAM_A in production can be in one resource group whilst
 those resources used for TEAM_B be can be in another resource group
 (though the Enterprise's cloud operating model dictates that applications must
 exist in different accounts).
+
+### Compound Tags
+
+There is a limit of 50 tags per resource in AWS, as such it is a good
+practice to combine several tag keys and values into a single compound
+tag. For example, rather than creating 3 keys (tags) called “OwnerName”,
+“OwnerPhone”, and “OwnerEmail,” the 3 keys should be combined into 1 key
+called “OwnerContact,” which could contain the compound values of Name,
+Phone, and Email address using a pipe delimiter.
+
+We will assign the Name Tag as a compound value. We will use the hyphen
+as a delimiter. An example of the values assigned to the Name Tag are
+shown in examples section at the end of this document.
+
+### Style Rules
+
+  - Tag key names are case-sensitive and can contain mixed-case letters,
+    numbers, underscores, and hyphens.
+
+  - Tag key names should use upper CamelCase (a.k.a. Pascal case), a
+    convention that combines words/abbreviations by beginning each word
+    with a capital letter such as “MiscMetadata” and “SupportEndpoints”.
+
+  - Tag values are case-sensitive and should not use the semi-colon
+    (“;”), equal sign (“=”), or pipe (“|”) characters as these are
+    used as delimiters in compound values.
+
+  - Compound tag value key names should use Pascal case followed by an
+    equal sign (“=”) such as
+    KeyName1=value1-value2-value3;KeyName2=value1-value2-value3
+    
+## Tagging Region Codes
+
+AWS’ regions codes are unique; therefore, they will be abbreviated as
+follows:
+
+| Region         | Region Code |
+| -------------- | ----------- |
+| ap-northeast-1 | an1         |
+| ap-northeast-2 | an2         |
+| ap-south-1     | as1         |
+| ap-southeast-1 | ase1        |
+| ap-southeast-2 | ase2        |
+| ca-central-1   | cc1         |
+| eu-central-1   | ec1         |
+| eu-west-1      | euw1        |
+| eu-west-2      | euw2        |
+| sa-east-1      | se1         |
+| us-east-1      | ue1         |
+| us-east-2      | ue2         |
+| us-west-1      | uw1         |
+| us-west-2      | uw2         |
