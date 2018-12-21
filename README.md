@@ -2,7 +2,7 @@
 AWS Tagging policy and naming convention for all resources created within any AWS accounts under the AWS Master Account
 
 # Table of Contents
-[Terms and Abbreviations 3](#_Toc500424982)
+[Terms and Abbreviations](#_Toc500424982)
 
 [Bibliography](#bibliography)
 
@@ -231,3 +231,16 @@ follows:
 | us-east-2      | ue2         |
 | us-west-1      | uw1         |
 | us-west-2      | uw2         |
+
+## Business Tags
+
+These can be used to capture business relevant information and which
+part of the business is responsible for this resource. Can greatly speed
+up the elimination process in an event of failure or
+attack.
+
+| Tag            | Description                                                                                                                            |
+| -------------- | -------------------------------------------------------------------------------------------------------------------------------------- |
+| SquadName      | Squad / Business are responsible for resource                                                                                          |
+| CostCentre     | Business group to be billed for the AWS resources                                                                                      |
+| PartnerContact | Value contains contact information for external managed services partner Pipe separated John Smith| +44 0000 00000 |jsmith@example.com |
