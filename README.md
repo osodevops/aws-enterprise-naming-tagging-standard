@@ -4,13 +4,13 @@ AWS Tagging policy and naming convention for all resources created within any AW
 # Table of Contents
 [Terms and Abbreviations 3](#_Toc500424982)
 
-[Bibliography 4](#bibliography)
+[Bibliography](#bibliography)
 
 [Executive Summary 5](#executive-summary)
 
 [AWS Terms and Abbreviations 5](#aws-terms-and-abbreviations)
 
-[Tagging Overview 5](#tagging-overview)
+[Tagging Overview](#tagging-overview)
 
 [Tagging Best Practices 6](#tagging-best-practices)
 
@@ -55,7 +55,6 @@ referenced within the document.
 | DB      | Database                                   |
 | EBS     | Elastic Block Store                        |
 | EC2     | AWS Elastic Compute Cloud                  |
-| WPAY    | WorldPay                                   |
 | OS      | Operating System                           |
 | PCI     | Payment Card Industry                      |
 | PII     | Personally identifiable information        |
@@ -131,3 +130,38 @@ to, supporting documentation.
 </tr>
 </tbody>
 </table>
+
+## AWS Terms and Abbreviations
+
+The following terms and abbreviations will be used through this design and implementation of all Enterprise applications.
+
+| Name                       | Value    |
+| -------------------------- | -------- |
+| Connectivity               | CONN     |
+| Database Layer             | RDS      |
+| Productuion Environment    | PROD     |
+| Dev Test Environment       | DEV/TEST |
+| Pre Production Environment | PPE      |
+| Management and Monitoring  | MGMT     |
+| Private                    | PRI      |
+| Public                     | PUB      |
+
+N.B. In the above table the forward slash character (“/”) is part of the Value and is not being used as a delimiter.
+
+## Tagging Overview
+
+AWS provide the ability to tag resources with descriptive metadata. Tags
+simplify resource management at scale and will be used for cost
+allocation. As the Enterprise plans to implement multiple applications,
+multiple application environments and multiple AWS accounts; tagging
+must be applied consistently to allow costs to be separated out into
+applications, environments and business units.
+
+Each tag consists of a key and a value, both of which are user-defined
+strings. Once defined, tags can be used as a filter when requesting
+resources, such as Amazon EC2 instances, based on tag keys or values.
+Tags are also reported against in Cost Allocation Reports.
+
+Tags provide identification and classification of AWS resources.
+Examples of commonly used tags include application identifier,
+environment, or owner.
