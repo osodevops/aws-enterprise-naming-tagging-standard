@@ -232,6 +232,19 @@ follows:
 | us-west-1      | uw1         |
 | us-west-2      | uw2         |
 
+## AMI Versioning
+
+AMI’s will have names that uniquely identify their use, operating
+system, OS version, creation date (reversed), creation version and AWS
+resource type prefix ‘AMI’. A “golden image” RedHat Linux 7.1 AMI name
+would be as
+follows:
+
+| Use                             | Operating System | Version | Creation Date | Version | AWS Resource |
+| ------------------------------- | ---------------- | ------- | ------------- | ------- | ------------ |
+| GOLD                            | RHEL             | 7.1     | 12/09/2017    | 01      | AMI          |
+| GOLD.RHEL.7.1.2017.09.12.01-AMI |
+
 ## Business Tags
 
 These can be used to capture business relevant information and which
