@@ -244,3 +244,20 @@ attack.
 | SquadName      | Squad / Business are responsible for resource                                                                                          |
 | CostCentre     | Business group to be billed for the AWS resources                                                                                      |
 | PartnerContact | Value contains contact information for external managed services partner Pipe separated John Smith| +44 0000 00000 |jsmith@example.com |
+
+## Security Tags
+
+To obtain a full visibility over account surface data we use these
+security classification tags in conjunction with the [Additional
+Tags](#additional-tags) to map which classification of data is where.
+AWS Config Rules can also be set where PCI data can only sit in
+Network=Red.
+
+| Tag             | Description                                                                                   |
+| --------------- | --------------------------------------------------------------------------------------------- |
+| Compliance      | An identifier for workloads designed to adhere to specific compliance e.g. Normal / PII / PCI |
+| Permissions     | An identifier for the specific entity that can modify the resource                            |
+| LastReviewed    | Last time this instance was reviewed for compliance - YYYY-mm-dd                              |
+| ApprovedVersion | Steps which are taken to approve AMI image                                                    |
+| ApprovedBy      | Department or software which has approved AMI for use in WorldPay                             |
+
