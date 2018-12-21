@@ -6,37 +6,37 @@ AWS Tagging policy and naming convention for all resources created within any AW
 
 [Bibliography](#bibliography)
 
-[Executive Summary 5](#executive-summary)
+[Executive Summary](#executive-summary)
 
-[AWS Terms and Abbreviations 5](#aws-terms-and-abbreviations)
+[AWS Terms and Abbreviations](#aws-terms-and-abbreviations)
 
 [Tagging Overview](#tagging-overview)
 
-[Tagging Best Practices 6](#tagging-best-practices)
+[Tagging Best Practices](#tagging-best-practices)
 
-[Resource Groups 6](#resource-groups)
+[Resource Groups](#resource-groups)
 
-[Compound Tags 6](#compound-tags)
+[Compound Tags](#compound-tags)
 
-[Style Rules 6](#style-rules)
+[Style Rules](#style-rules)
 
-[Tagging Region Codes 6](#tagging-region-codes)
+[Tagging Region Codes](#tagging-region-codes)
 
-[Enterprise Tagging Standards 7](#enterprise-tagging-standards)
+[Enterprise Tagging Standards](#enterprise-tagging-standards)
 
-[Environment Names 7](#environment-names)
+[Environment Names](#environment-names)
 
-[Name Tag Format 8](#name-tag-format)
+[Name Tag Format](#name-tag-format)
 
-[AMI Versioning 9](#ami-versioning)
+[AMI Versioning](#ami-versioning)
 
-[Additional Tags 9](#additional-tags)
+[Additional Tags](#additional-tags)
 
-[Operational Tags 10](#operational-tags)
+[Operational Tags](#operational-tags)
 
-[Business Tags 10](#business-tags)
+[Business Tags](#business-tags)
 
-[Security Tags 10](#security-tags)
+[Security Tags](#security-tags)
 
 [AWS Resource Suffixes 11](#aws-resource-suffixes)
 
@@ -165,3 +165,17 @@ Tags are also reported against in Cost Allocation Reports.
 Tags provide identification and classification of AWS resources.
 Examples of commonly used tags include application identifier,
 environment, or owner.
+
+### Resource Groups
+
+Use resource groups. A Resource Group is a collection of resources that
+shares one or more tags. It can span services and can be used to create
+a custom console that organizes and consolidates resources on a
+per-project basis. In AWS, a resource is an entity such as an EC2
+instance, a S3 bucket and so on. Using the resource group tool, custom
+consoles can be created that organize and consolidate all resources for
+a specific project in a single view. For example, all the resources for
+a version of TEAM_A in production can be in one resource group whilst
+those resources used for TEAM_B be can be in another resource group
+(though the Enterprise's cloud operating model dictates that applications must
+exist in different accounts).
