@@ -272,5 +272,5 @@ Network=Red.
 | Permissions     | An identifier for the specific entity that can modify the resource                            |
 | LastReviewed    | Last time this instance was reviewed for compliance - YYYY-mm-dd                              |
 | ApprovedVersion | Steps which are taken to approve AMI image                                                    |
-| ApprovedBy      | Department or software which has approved AMI for use in WorldPay                             |
+| ApprovedBy      | Department or software which has approved AMI for use in Organisation X                       |
 
